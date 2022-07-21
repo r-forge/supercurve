@@ -1,10 +1,10 @@
-* using log directory 'C:/Users/coom05/Desktop/rforge/supercurve/pkg/SuperCurve.Rcheck'
-* using R version 3.4.0 (2017-04-21)
+* using log directory 'C:/Users/KRC/Desktop/RForge/supercurve/pkg/SuperCurve.Rcheck'
+* using R version 4.2.1 (2022-06-23 ucrt)
 * using platform: x86_64-w64-mingw32 (64-bit)
-* using session charset: ISO8859-1
+* using session charset: UTF-8
 * using option '--as-cran'
 * checking for file 'SuperCurve/DESCRIPTION' ... OK
-* this is package 'SuperCurve' version '1.5.15'
+* this is package 'SuperCurve' version '1.5.17'
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: '"P. Roebuck" <proebuck@mdanderson.org>'
 
@@ -14,16 +14,18 @@ Suggests or Enhances not in mainstream repositories:
   SuperCurveSampleData
 
 Found the following (possibly) invalid URLs:
-  URL: https://academic.oup.com/bioinformatics/article/23/15/1986/205819/Non-parametric-quantification-of-protein-lysate
-    From: man/sc09-CobsFitClass-class.Rd
-    Status: Error
-    Message: libcurl error code 7
-    	Failed to connect to academic.oup.com port 443: Connection refused
-  URL: https://academic.oup.com/bioinformatics/article/25/11/1384/331482/Variable-slope-normalization-of-reverse-phase
-    From: man/sc15-normalize.Rd
-    Status: Error
-    Message: libcurl error code 7
-    	Failed to connect to academic.oup.com port 443: Connection refused
+  URL: http://r-forge.r-project.org/projects/supercurve/ (moved to https://r-forge.r-project.org/projects/supercurve/)
+    From: DESCRIPTION
+    Status: 200
+    Message: OK
+  URL: http://www.ncbi.nlm.nih.gov/pubmed/22550399 (moved to https://pubmed.ncbi.nlm.nih.gov/22550399/)
+    From: man/sc14-spatialCorrection.Rd
+    Status: 200
+    Message: OK
+  URL: http://www.ncbi.nlm.nih.gov/pubmed/25380958 (moved to https://pubmed.ncbi.nlm.nih.gov/25380958/)
+    From: man/sc22-DS5RPPAPreFitQC-class.Rd
+    Status: 200
+    Message: OK
 
 The Date field is over a month old.
 * checking package namespace information ... OK
@@ -33,13 +35,14 @@ The Date field is over a month old.
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
+* checking serialization versions ... OK
 * checking whether package 'SuperCurve' can be installed ... WARNING
 Found the following significant warnings:
-  Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
   Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-See 'C:/Users/coom05/Desktop/rforge/supercurve/pkg/SuperCurve.Rcheck/00install.out' for details.
+See 'C:/Users/KRC/Desktop/RForge/supercurve/pkg/SuperCurve.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 * checking package directory ... OK
+* checking for future file timestamps ... OK
 * checking 'build' directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
@@ -52,7 +55,8 @@ See 'C:/Users/coom05/Desktop/rforge/supercurve/pkg/SuperCurve.Rcheck/00install.o
 * checking whether the package can be loaded with stated dependencies ... OK
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... NOTE
-Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+  running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
 
 A namespace must be able to be loaded with just the base namespace
@@ -190,48 +194,46 @@ Codoc mismatches from documentation object 'normalize':
 * checking sizes of PDF files under 'inst/doc' ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
-* checking examples ... NOTE
-Examples with CPU or elapsed time > 5s
-                       user system elapsed
-sc14-spatialCorrection 6.07   0.14    6.25
+* checking examples ... OK
 * checking for unstated dependencies in 'tests' ... OK
-* checking tests ... OK
+* checking tests ... ERROR
   Running 'sessionInfo.R'
-  Comparing 'sessionInfo.Rout' to 'sessionInfo.Rout.save' ...11,12d10
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+  Comparing 'sessionInfo.Rout' to 'sessionInfo.Rout.save' ...11,13d10
+< Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+<   running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 < Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-35,39c33,34
-< R version 3.4.0 (2017-04-21)
+36,40c33,34
+< R version 4.2.1 (2022-06-23 ucrt)
 < Platform: x86_64-w64-mingw32/x64 (64-bit)
-< Running under: Windows 7 x64 (build 7601) Service Pack 1
+< Running under: Windows 10 x64 (build 19043)
 < 
 < Matrix products: default
 ---
 > R version 2.15.3 Patched (2013-03-13 r62287)
 > Platform: x86_64-apple-darwin9.8.0/x86_64 (64-bit)
-42,46c37
+43,47c37
 < [1] LC_COLLATE=C                          
-< [2] LC_CTYPE=English_United States.1252   
-< [3] LC_MONETARY=English_United States.1252
+< [2] LC_CTYPE=English_United States.utf8   
+< [3] LC_MONETARY=English_United States.utf8
 < [4] LC_NUMERIC=C                          
-< [5] LC_TIME=English_United States.1252    
+< [5] LC_TIME=English_United States.utf8    
 ---
 > [1] C/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-53,57c44,48
-<  [1] SuperCurveSampleData_1.0.2 timeDate_3012.100         
-<  [3] robustbase_0.92-7          quantreg_5.33             
-<  [5] SparseM_1.77               mgcv_1.8-17               
-<  [7] nlme_3.1-131               boot_1.3-19               
-<  [9] SuperCurve_1.5.15          cobs_1.3-3                
+54,58c44,48
+<  [1] SuperCurveSampleData_1.0.2 timeDate_3043.102         
+<  [3] robustbase_0.95-0          quantreg_5.93             
+<  [5] SparseM_1.81               mgcv_1.8-40               
+<  [7] nlme_3.1-157               boot_1.3-28               
+<  [9] SuperCurve_1.5.17          cobs_1.3-5                
 ---
 >  [1] SuperCurveSampleData_1.0.1 timeDate_3011.99          
 >  [3] robustbase_0.92-2          quantreg_5.05             
 >  [5] SparseM_1.6                mgcv_1.8-4                
 >  [7] nlme_3.1-108               boot_1.3-7                
 >  [9] SuperCurve_1.5.8           cobs_1.3-0                
-60,61c51,52
-< [1] lattice_0.20-35    MASS_7.3-47        grid_3.4.0         MatrixModels_0.4-2
-< [5] Matrix_1.2-9       DEoptimR_1.0-8     compiler_3.4.0    
+61,62c51,52
+< [1] lattice_0.20-45    MASS_7.3-57        grid_4.2.1         MatrixModels_0.5-0
+< [5] Matrix_1.4-1       DEoptimR_1.0-11    survival_3.3-1     compiler_4.2.1    
 ---
 > [1] DEoptimR_1.0-2  MASS_7.3-23     Matrix_1.1-4    grid_2.15.3    
 > [5] lattice_0.20-29
@@ -521,22 +523,20 @@ sc14-spatialCorrection 6.07   0.14    6.25
 > > 
 > > 
   Running 'testDesign.R'
-  Comparing 'testDesign.Rout' to 'testDesign.Rout.save' ...10,11d9
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+  Running 'testFit.R' [62s]
+  Comparing 'testFit.Rout' to 'testFit.Rout.save' ...14,16d13
+< Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+<   running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 < Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-  Running 'testFit.R' [176s]
-  Comparing 'testFit.Rout' to 'testFit.Rout.save' ...14,15d13
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
-< Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-21c19
+22c19
 < The following object is masked from 'package:robustbase':
 ---
 > The following object(s) are masked from 'package:robustbase':
-44c42
+45c42
 < Error in RPPAFitParams() : argument "measure" is missing, with no default
 ---
 > Error in is.character(measure) : 'measure' is missing
-158c156
+159c156
 < The following object is masked from 'package:base':
 ---
 > The following object(s) are masked from 'package:base':
@@ -1225,92 +1225,103 @@ sc14-spatialCorrection 6.07   0.14    6.25
 > > 
   Running 'testNormalize.R'
   Running 'testRPPA.R'
-  Comparing 'testRPPA.Rout' to 'testRPPA.Rout.save' ...10,11d9
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+  Comparing 'testRPPA.Rout' to 'testRPPA.Rout.save' ...10,12d9
+< Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+<   running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 < Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-47c45
+48,50c45,46
 <   cannot open URL 'http://www.example.org/myslide.tsv': HTTP status was '404 Not Found'
+< Error in url(path_or_url, "r") : 
+<   cannot open the connection to 'http://www.example.org/myslide.tsv'
 ---
 >   cannot open: HTTP status was '404 Not Found'
-123c121
-<   file "C:/R/R-3.4.0/library/SuperCurveSampleData/extdata/rppaCellData/cellLineInfo.tsv" is not a MicroVigene datafile
+> Error in url(path_or_url, "r") : cannot open the connection
+125c121
+<   file "C:/R/R-4.2.1/library/SuperCurveSampleData/extdata/rppaCellData/cellLineInfo.tsv" is not a MicroVigene datafile
 ---
 >   file "/Library/Frameworks/R.framework/Versions/2.15/Resources/library/SuperCurveSampleData/extdata/rppaCellData/cellLineInfo.tsv" is not a MicroVigene datafile
-166c164
-<   cannot import data from file "C:/R/R-3.4.0/library/SuperCurveSampleData/extdata/rppaCellData/Akt.txt"
+168c164
+<   cannot import data from file "C:/R/R-4.2.1/library/SuperCurveSampleData/extdata/rppaCellData/Akt.txt"
 ---
 >   cannot import data from file "/Library/Frameworks/R.framework/Versions/2.15/Resources/library/SuperCurveSampleData/extdata/rppaCellData/Akt.txt"
-182c180
-<   cannot import data from file "C:/R/R-3.4.0/library/SuperCurveSampleData/extdata/rppaCellData/Akt.txt"
+184c180
+<   cannot import data from file "C:/R/R-4.2.1/library/SuperCurveSampleData/extdata/rppaCellData/Akt.txt"
 ---
 >   cannot import data from file "/Library/Frameworks/R.framework/Versions/2.15/Resources/library/SuperCurveSampleData/extdata/rppaCellData/Akt.txt"
   Running 'testRPPANormalizationParams.R'
-  Comparing 'testRPPANormalizationParams.Rout' to 'testRPPANormalizationParams.Rout.save' ...10,11d9
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+  Comparing 'testRPPANormalizationParams.Rout' to 'testRPPANormalizationParams.Rout.save' ...10,12d9
+< Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+<   running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 < Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-  Running 'testRPPASet.R' [21s]
-  Comparing 'testRPPASet.Rout' to 'testRPPASet.Rout.save' ...10,11d9
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+39,40c36
+< Error in RPPANormalizationParams(method = "vs", arglist = "bogus") : 
+<   is.list(arglist) is not TRUE
+---
+> Error : is.list(arglist) is not TRUE
+  Running 'testRPPASet.R'
+  Comparing 'testRPPASet.Rout' to 'testRPPASet.Rout.save' ...10,12d9
+< Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+<   running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 < Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
-17c15
+18c15
 < The following object is masked from 'package:robustbase':
 ---
 > The following object(s) are masked from 'package:robustbase':
-129c127
-<   directory "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/nosuch" does not exist
+130c127
+<   directory "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/nosuch" does not exist
 ---
 >   directory "/tmp/RtmpXvDrjD/supercurve/nosuch" does not exist
-138c136
-<   directory "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/somefile" does not exist
+139c136
+<   directory "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/somefile" does not exist
 ---
 >   directory "/tmp/RtmpXvDrjD/supercurve/somefile" does not exist
-149c147
-<   no quantification files found in directory "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/emptydir"
+150c147
+<   no quantification files found in directory "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/emptydir"
 ---
 >   no quantification files found in directory "/tmp/RtmpXvDrjD/supercurve/emptydir"
-221c219
-<   cannot load antibody data from file "C:/R/R-3.4.0/library/SuperCurveSampleData/extdata/rppaTumorData/nosuch.tsv" - file.exists(antibodyfile) is not TRUE
+222c219
+<   cannot load antibody data from file "C:/R/R-4.2.1/library/SuperCurveSampleData/extdata/rppaTumorData/nosuch.tsv" - file.exists(antibodyfile) is not TRUE
 ---
 >   cannot load antibody data from file "/Library/Frameworks/R.framework/Versions/2.15/Resources/library/SuperCurveSampleData/extdata/rppaTumorData/nosuch.tsv" - file.exists(antibodyfile) is not TRUE
-231c229
-<   cannot load antibody data from file "C:/R/R-3.4.0/library/SuperCurveSampleData/extdata/rppaTumorData" - argument is not a file
+232c229
+<   cannot load antibody data from file "C:/R/R-4.2.1/library/SuperCurveSampleData/extdata/rppaTumorData" - argument is not a file
 ---
 >   cannot load antibody data from file "/Library/Frameworks/R.framework/Versions/2.15/Resources/library/SuperCurveSampleData/extdata/rppaTumorData" - argument is not a file
-246c244
-<   cannot load antibody data from file "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/emptyfile.tsv" - no lines available in input
+247c244
+<   cannot load antibody data from file "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/emptyfile.tsv" - no lines available in input
 ---
 >   cannot load antibody data from file "/tmp/RtmpXvDrjD/supercurve/emptyfile.tsv" - no lines available in input
-266c264
-<   cannot load antibody data from file "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/singlecolfile.tsv" - missing required column: "Antibody"
+267c264
+<   cannot load antibody data from file "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/singlecolfile.tsv" - missing required column: "Antibody"
 ---
 >   cannot load antibody data from file "/tmp/RtmpXvDrjD/supercurve/singlecolfile.tsv" - missing required column: "Antibody"
-288c286
-<   cannot load antibody data from file "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/missingreqdcols.tsv" - missing required column: "Antibody"
+289c286
+<   cannot load antibody data from file "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/missingreqdcols.tsv" - missing required column: "Antibody"
 ---
 >   cannot load antibody data from file "/tmp/RtmpXvDrjD/supercurve/missingreqdcols.tsv" - missing required column: "Antibody"
-300c298
+301c298
 < Error in (function (classes, fdef, mtable)  : 
 ---
 > Error in function (classes, fdef, mtable)  : 
-311c309
-<   directory "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/nosuch" does not exist
+312c309
+<   directory "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/nosuch" does not exist
 ---
 >   directory "/tmp/RtmpXvDrjD/supercurve/nosuch" does not exist
-325c323,325
+326c323,325
 < skipped readonly output directory test (not implemented) 
 ---
 > Error in .local(object, ...) : 
 >   directory "/tmp/RtmpXvDrjD/supercurve/readonly" is not writable
 > [1] TRUE
-388c388
-<   directory "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/nosuch" does not exist
+389c388
+<   directory "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/nosuch" does not exist
 ---
 >   directory "/tmp/RtmpXvDrjD/supercurve/nosuch" does not exist
-397c397
-<   directory "C:\Users\coom05\AppData\Local\Temp\RtmpSywoHu/supercurve/somefile" does not exist
+398c397
+<   directory "C:\Users\KRC\AppData\Local\Temp\RtmpwNCpZB/working_dir\RtmpQtYpXQ/supercurve/somefile" does not exist
 ---
 >   directory "/tmp/RtmpXvDrjD/supercurve/somefile" does not exist
-454c454,458
+455c454,458
 < skipped ImageMagick test (not implemented) 
 ---
 > dev.new(): using pdf(file="Rplots4.pdf")
@@ -1319,12 +1330,78 @@ sc14-spatialCorrection 6.07   0.14    6.25
 > Error : (converted from warning) ImageMagick executable 'convert' not installed or unavailable via PATH
 > [1] TRUE
   Running 'testRPPASpatialParams.R'
-  Comparing 'testRPPASpatialParams.Rout' to 'testRPPASpatialParams.Rout.save' ...10,11d9
-< Warning: running command 'C:\Windows\system32\cmd.exe /c convert --version' had status 4
+  Comparing 'testRPPASpatialParams.Rout' to 'testRPPASpatialParams.Rout.save' ...10,12d9
+< Warning in system(cmd, intern = intern, wait = wait | intern, show.output.on.console = wait,  :
+<   running command 'C:\WINDOWS\system32\cmd.exe /c convert --version' had status 4
 < Warning: ImageMagick executable 'convert' not installed or unavailable via PATH
+20,21c17
+< Error in RPPASpatialParams(cutoff = "bogus") : 
+<   is.numeric(cutoff) && length(cutoff) == 1 is not TRUE
+---
+> Error : is.numeric(cutoff) && length(cutoff) == 1 is not TRUE
+35,36c31
+< Error in RPPASpatialParams(cutoff = 1:10) : 
+<   is.numeric(cutoff) && length(cutoff) == 1 is not TRUE
+---
+> Error : is.numeric(cutoff) && length(cutoff) == 1 is not TRUE
+44,45c39
+< Error in RPPASpatialParams(k = "bogus") : 
+<   is.numeric(k) && length(k) == 1 is not TRUE
+---
+> Error : is.numeric(k) && length(k) == 1 is not TRUE
+59,60c53
+< Error in RPPASpatialParams(k = 1:10) : 
+<   is.numeric(k) && length(k) == 1 is not TRUE
+---
+> Error : is.numeric(k) && length(k) == 1 is not TRUE
+68,69c61
+< Error in RPPASpatialParams(gamma = "bogus") : 
+<   is.numeric(gamma) && length(gamma) == 1 is not TRUE
+---
+> Error : is.numeric(gamma) && length(gamma) == 1 is not TRUE
+88,89c80
+< Error in RPPASpatialParams(gamma = 1:10) : 
+<   is.numeric(gamma) && length(gamma) == 1 is not TRUE
+---
+> Error : is.numeric(gamma) && length(gamma) == 1 is not TRUE
+97,98c88
+< Error in RPPASpatialParams(plotSurface = "bogus") : 
+<   is.logical(plotSurface) && length(plotSurface) == 1 is not TRUE
+---
+> Error : is.logical(plotSurface) && length(plotSurface) == 1 is not TRUE
+102,103c92
+< Error in RPPASpatialParams(plotSurface = 1) : 
+<   is.logical(plotSurface) && length(plotSurface) == 1 is not TRUE
+---
+> Error : is.logical(plotSurface) && length(plotSurface) == 1 is not TRUE
+107,108c96
+< Error in RPPASpatialParams(plotSurface = c(TRUE, FALSE)) : 
+<   is.logical(plotSurface) && length(plotSurface) == 1 is not TRUE
+---
+> Error : is.logical(plotSurface) && length(plotSurface) == 1 is not TRUE
+Running the tests in 'tests/testDesign.R' failed.
+Last 13 lines of output:
+  > dsn <- RPPADesignFromParams(jnk, dp)
+  > checkIdentical(dsn@controls, list("neg con", "pos con"))
+  [1] TRUE
+  > 
+  > ## This is for showing off the plot, where the controls dominate
+  > dp <- RPPADesignParams(grouping="bySample")
+  > dsn <- RPPADesignFromParams(jnk, dp)
+  Warning in RPPADesignFromParams(jnk, dp) :
+    some dilution steps have not been specified
+  > plot(jnk, dsn)
+  Warning in min(x) : no non-missing arguments to min; returning Inf
+  Warning in max(x) : no non-missing arguments to max; returning -Inf
+  Error in plot.window(...) : need finite 'xlim' values
+  Calls: plot ... plot -> plot -> plot.default -> localWindow -> plot.window
+  Execution halted
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking re-building of vignette outputs ... OK
 * checking PDF version of manual ... OK
+* skipping checking HTML version of manual: no command 'tidy' found
+* checking for non-standard things in the check directory ... OK
+* checking for detritus in the temp directory ... OK
 * DONE
-Status: 2 WARNINGs, 5 NOTEs
+Status: 1 ERROR, 2 WARNINGs, 4 NOTEs

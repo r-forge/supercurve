@@ -1,7 +1,7 @@
-* using log directory 'C:/Users/coom05/Desktop/rforge/supercurve/pkg/SuperCurveSampleData.Rcheck'
-* using R version 3.4.0 (2017-04-21)
+* using log directory 'C:/Users/KRC/Desktop/RForge/supercurve/pkg/SuperCurveSampleData.Rcheck'
+* using R version 4.2.1 (2022-06-23 ucrt)
 * using platform: x86_64-w64-mingw32 (64-bit)
-* using session charset: ISO8859-1
+* using session charset: UTF-8
 * using option '--as-cran'
 * checking for file 'SuperCurveSampleData/DESCRIPTION' ... OK
 * this is package 'SuperCurveSampleData' version '1.0.2'
@@ -9,6 +9,12 @@
 Maintainer: '"P. Roebuck" <proebuck@mdanderson.org>'
 
 New submission
+
+Found the following (possibly) invalid URLs:
+  URL: http://r-forge.r-project.org/projects/supercurve/ (moved to https://r-forge.r-project.org/projects/supercurve/)
+    From: DESCRIPTION
+    Status: 200
+    Message: OK
 
 The Date field is over a month old.
 * checking package namespace information ... OK
@@ -18,12 +24,14 @@ The Date field is over a month old.
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
+* checking serialization versions ... OK
 * checking whether package 'SuperCurveSampleData' can be installed ... OK
 * checking installed package size ... NOTE
   installed size is  5.5Mb
   sub-directories of 1Mb or more:
     extdata   5.5Mb
 * checking package directory ... OK
+* checking for future file timestamps ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
@@ -45,5 +53,8 @@ The Date field is over a month old.
 * checking for unstated dependencies in examples ... OK
 * checking examples ... OK
 * checking PDF version of manual ... OK
+* skipping checking HTML version of manual: no command 'tidy' found
+* checking for non-standard things in the check directory ... OK
+* checking for detritus in the temp directory ... OK
 * DONE
 Status: 2 NOTEs
